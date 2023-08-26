@@ -4,6 +4,10 @@ import espressoImage from "../assets/Type=Expresso.png";
 import americanEspresso from "../assets/Type=Americano.png";
 import creamyEspresso from "../assets/Type=Expresso Cremoso.png";
 import icedEspresso from "../assets/Type=Café Gelado.png";
+import milkEspresso from "../assets/Type=Café com Leite.png";
+import latte from "../assets/Type=Latte.png";
+import cappuccino from "../assets/Type=Capuccino.png";
+import macchiato from "../assets/Type=Macchiato.png";
 
 import { v4 as uuidv4 } from "uuid";
 
@@ -64,6 +68,39 @@ export function MenuContextProvider({ children }: MenuContextProviderProps) {
       image: icedEspresso,
       price: 9.9,
       tags: ["Traditional", "Iced"],
+    },
+    {
+      id: uuidv4(),
+      title: "Coffee with Milk",
+      description: "Half and half traditional espresso with steamed milk",
+      image: milkEspresso,
+      price: 9.9,
+      tags: ["Traditional", "With Milk"],
+    },
+    {
+      id: uuidv4(),
+      title: "Latte",
+      description: "A shot of espresso with twice as much milk and creamy foam",
+      image: latte,
+      price: 9.9,
+      tags: ["Traditional", "With Milk"],
+    },
+    {
+      id: uuidv4(),
+      title: "Capuccino",
+      description:
+        "Cinnamon drink made from equal doses of coffee, milk and foam",
+      image: cappuccino,
+      price: 9.9,
+      tags: ["Traditional", "With Milk"],
+    },
+    {
+      id: uuidv4(),
+      title: "Macchiato",
+      description: "Espresso coffee mixed with a little hot milk and foam",
+      image: macchiato,
+      price: 9.9,
+      tags: ["Traditional", "With Milk"],
     },
   ]);
 

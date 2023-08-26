@@ -35,8 +35,9 @@ export function OrderContextProvider({ children }: OrderContextProviderProps) {
   const [order, setOrder] = useState({} as NewCheckOutOrderType);
   function addProductToCart(data: CartItem) {
     const productAlreadyInCart = cart.filter((item) => item.id === data.id);
-    if (productAlreadyInCart.length !== 0) {
-      return alert("Este produto já está no carrinho!");
+    console.log(productAlreadyInCart);
+    if (productAlreadyInCart.length > 0) {
+      return alert("This product is already in your cart.");
     }
     const order = {
       ...data,

@@ -158,6 +158,13 @@ export const ConfirmOrderButton = styled.button`
   }
 `;
 
+export const CartEmptyMessage = styled.span`
+  color: ${(props) => props.theme["base-subtitle"]};
+  font-family: "Baloo 2", cursive;
+  text-align: center;
+  opacity: 0.5;
+`;
+
 // export const PaymentInputWrapper = styled.div`
 //   display: flex;
 //   padding: 1rem;

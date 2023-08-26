@@ -1,5 +1,6 @@
 import {
   AddressInput,
+  CartEmptyMessage,
   CartItemsContainer,
   CheckoutContainer,
   CheckoutSidebar,
@@ -132,8 +133,13 @@ export function Checkout() {
       <CheckoutSidebar>
         <h1>Selected products</h1>
         <CartItemsContainer>
-          {cart.length !== 0 &&
-            cart.map((item) => <CheckoutItem key={item.id} data={item} />)}
+          {cart.length !== 0 ? (
+            cart.map((item) => <CheckoutItem key={item.id} data={item} />)
+          ) : (
+            <CartEmptyMessage>
+              There are no items in your cart.
+            </CartEmptyMessage>
+          )}
         </CartItemsContainer>
         <footer>
           {cart.length !== 0 ? (

@@ -62,6 +62,7 @@ export const LabelContainer = styled.div`
   gap: 0.5rem;
   flex-wrap: wrap;
   margin: 1rem 0;
+  justify-content: center;
 
   > span {
     background: ${(props) => props.theme["yellow-light"]};

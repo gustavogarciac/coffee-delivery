@@ -39,7 +39,7 @@ export function MenuItem({ data }: MenuItemProps) {
 
   function handleAddProductToCart() {
     if (quantity === 0) {
-      alert("Selecione, no mínimo, uma unidade.");
+      return alert("Select at least one unity.");
     }
     addProductToCart({
       ...data,
